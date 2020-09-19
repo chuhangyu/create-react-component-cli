@@ -1,0 +1,46 @@
+{
+  "name": "fast-create-component-cli",
+  "version": "1.0.0",
+  "description": "创建前端脚手架",
+  "main": "index.js",
+  "bin": {
+    "fast": "./bin/fast.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pub": "npm run compile && npm publish",
+    "compile": "npx babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuhangyu/create-react-component-cli.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "褚杭余",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chuhangyu/create-react-component-cli/issues"
+  },
+  "homepage": "https://github.com/chuhangyu/create-react-component-cli#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.11.5",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "husky": "^4.3.0"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "commander": "^6.1.0",
+    "fs-extra": "^9.0.1",
+    "git-clone": "^0.1.0",
+    "inquirer": "^7.3.3"
+  }
+}
